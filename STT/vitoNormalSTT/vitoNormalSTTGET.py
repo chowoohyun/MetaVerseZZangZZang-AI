@@ -28,4 +28,4 @@ def getSTT(filepath):
     print(time.time()-n_time)
 
 # sample
-print(getSTT("C:\\Users\\HP\\Videos\\EaseUS RecExperts\\20221012_165907.mp3"))
+getSTT("C:\\Users\\HP\\Videos\\EaseUS RecExperts\\20221012_165907.mp3")
