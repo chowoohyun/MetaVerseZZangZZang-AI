@@ -6,8 +6,8 @@
 
 ## 조우현
 
-- [AI] 2022-10-12 (수) - 조우현
-- research konlpy
+2022-10-12 (수)
+research konlpy & add references
 
 ### References
 
