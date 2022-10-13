@@ -31,3 +31,6 @@ pip install pororo
 - https://iostream.tistory.com/144
 - https://github.com/topics/korean-nlp
 - https://github.com/Beomi/KcELECTRA
+- https://lovit.github.io/nlp/2019/04/30/textrank/ (textrank)
+- https://wonhwa.tistory.com/49 (mecab)
+- https://github.com/lovit/soynlp#usage-guide (soynlp)
