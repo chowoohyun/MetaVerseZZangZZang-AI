@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Directive by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+		<style>
+			ul{
+				list-style:none;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane"></span>
+				<h1>회의록</h1>
+				<br/>
+				<p>회의 날짜 : 2022-11-07</p>
+				<p>회의 참가자 : 이승민, 조우현, 신우진, 현지현</p>
+
+
+<!--				<p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a></p>-->
+
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container medium">
+					<h2>회의록 요약</h2>
+				</header>
+				<div class="box container">
+					<p>회의록 요약한 내용입니다.</p>
+				</div>
+
+				</header>
+
+				<header class="major container medium">
+					<h2>AI 추천 내용</h2>
+				</header>
+				<div class="box container">
+					<section>
+
+						<li style="list-style: none; text-align: center; float: left; padding-left: 6%">
+							<span class="image"><img src="./images/kim.jpg" alt="" width="130px" height="130px"></span>
+							<h5>자료1(제목)</h5>
+							<a href="https://github.com/adunStudio" target="_blank" >Learn More</a>
+
+
+							<span class="image"><img src="./images/hyun.jpg" alt="" width="130px" height="130px"></span>
+							<h5>자료2(제목)</h5>
+							<a href="https://github.com/JihyunGit" target="_blank">Learn More</a>
+
+
+							<span class="image"><img src = "./images/cho.jpg" width="130px" height="130px"></span>
+							<h5>자료3(제목)</h5>
+							<a href="https://github.com/chowoohyun" target="_blank">Learn More</a>
+						</li>
+						<li style="list-style: none; text-align: center; float: left; padding-left: 6%">
+							<span class="image"><img src = "./images/park.jpg" width="130px" height="130px"></span>
+							<h4>자료4(제목)</h4>
+							<a href="https://github.com/juliajh" target="_blank">Learn More</a>
+
+							<span class="image"><img src = "./images/lee.jpg" width="130px" height="130px"></span>
+							<h4>자료5(제목)</h4>
+							<a href="https://github.com/leebach98" target="_blank">Learn More</a>
+
+							<span class="image"><img src = "./images/shin.jpg" width="130px" height="130px"></span>
+							<h4>자료6(제목)</h4>
+							<a href="https://github.com/NoooJin" target="_blank">Learn More</a>
+						</li>
+					</section>
+				</div>
+
+				<section style="padding-top: 40px">
+					<header>
+						<h3>회의 시각화</h3>
+					</header>
+					<div style="padding-top:8%;margin:auto; width: 470px; height: 400px;float: left">
+								<canvas id="myChart"></canvas>
+					</div>
+					<div style="margin:auto;width: 350px; height: 400px; float: right">
+						<canvas id="myChart2"></canvas>
+					</div>
+
+
+				</section>
+<!--					<section>-->
+<!--						<header>-->
+<!--							<h3>Unordered List</h3>-->
+<!--						</header>-->
+<!--						<ul class="default">-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--						</ul>-->
+<!--					</section>-->
+<!--					<section>-->
+<!--						<header>-->
+<!--							<h3>Ordered List</h3>-->
+<!--						</header>-->
+<!--						<ol class="default">-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>-->
+<!--						</ol>-->
+<!--					</section>-->
+<!--					<section>-->
+<!--						<header>-->
+<!--							<h3>Table</h3>-->
+<!--						</header>-->
+<!--						<div class="table-wrapper">-->
+<!--							<table class="default">-->
+<!--								<thead>-->
+<!--									<tr>-->
+<!--										<th>ID</th>-->
+<!--										<th>Name</th>-->
+<!--										<th>Description</th>-->
+<!--										<th>Price</th>-->
+<!--									</tr>-->
+<!--								</thead>-->
+<!--								<tbody>-->
+<!--									<tr>-->
+<!--										<td>45815</td>-->
+<!--										<td>Something</td>-->
+<!--										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>-->
+<!--										<td>29.99</td>-->
+<!--									</tr>-->
+<!--									<tr>-->
+<!--										<td>24524</td>-->
+<!--										<td>Nothing</td>-->
+<!--										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>-->
+<!--										<td>19.99</td>-->
+<!--									</tr>-->
+<!--									<tr>-->
+<!--										<td>45815</td>-->
+<!--										<td>Something</td>-->
+<!--										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>-->
+<!--										<td>29.99</td>-->
+<!--									</tr>-->
+<!--									<tr>-->
+<!--										<td>24524</td>-->
+<!--										<td>Nothing</td>-->
+<!--										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>-->
+<!--										<td>19.99</td>-->
+<!--									</tr>-->
+<!--								</tbody>-->
+<!--								<tfoot>-->
+<!--									<tr>-->
+<!--										<td colspan="3"></td>-->
+<!--										<td>100.00</td>-->
+<!--									</tr>-->
+<!--								</tfoot>-->
+<!--							</table>-->
+<!--						</div>-->
+<!--					</section>-->
+<!--					<section>-->
+<!--						<header>-->
+<!--							<h3>Form</h3>-->
+<!--						</header>-->
+<!--						<form method="post" action="#">-->
+<!--							<div class="row">-->
+<!--								<div class="col-6 col-12-mobilep">-->
+<!--									<label for="name">Name</label>-->
+<!--									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />-->
+<!--								</div>-->
+<!--								<div class="col-6 col-12-mobilep">-->
+<!--									<label for="email">Email</label>-->
+<!--									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />-->
+<!--								</div>-->
+<!--								<div class="col-12">-->
+<!--									<label for="subject">Subject</label>-->
+<!--									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />-->
+<!--								</div>-->
+<!--								<div class="col-12">-->
+<!--									<label for="subject">Message</label>-->
+<!--									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>-->
+<!--								</div>-->
+<!--								<div class="col-12">-->
+<!--									<ul class="actions special">-->
+<!--										<li><input type="submit" value="Send" /></li>-->
+<!--										<li><input type="reset" value="Reset" class="alt" /></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</form>-->
+<!--					</section>-->
+<!--				</div>-->
+
+
+<!--				<footer class="major container medium">-->
+<!--					<h3>Get shady with science</h3>-->
+<!--					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>-->
+<!--					<ul class="actions special">-->
+<!--						<li><a href="#" class="button">Join our crew</a></li>-->
+<!--					</ul>-->
+<!--				</footer>-->
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container medium">
+
+					<header class="major last">
+						<h2>Questions or comments?</h2>
+					</header>
+
+					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
+					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-mobilep">
+								<input type="email" name="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+									var context = document
+											.getElementById('myChart')
+											.getContext('2d');
+									var myChart = new Chart(context, {
+										type: 'line',
+										data: {
+											labels: ['1','2','3','4','5','6','7'],
+											datasets: [
+												{ //데이터
+													label: 'test1', //차트 제목
+													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+													data: [
+														21,19,25,20,23,50,25 //x축 label에 대응되는 데이터 값
+													],
+													backgroundColor: [
+														//색상
+														'rgba(255, 99, 132, 0.2)',
+														'rgba(54, 162, 235, 0.2)',
+														'rgba(255, 206, 86, 0.2)',
+														'rgba(75, 192, 192, 0.2)',
+														'rgba(153, 102, 255, 0.2)',
+														'rgba(255, 159, 64, 0.2)'
+													],
+													borderColor: [
+														//경계선 색상
+														'rgba(255, 99, 132, 1)',
+														'rgba(54, 162, 235, 1)',
+														'rgba(255, 206, 86, 1)',
+														'rgba(75, 192, 192, 1)',
+														'rgba(153, 102, 255, 1)',
+														'rgba(255, 159, 64, 1)'
+													],
+													borderWidth: 1 //경계선 굵기
+												}/* ,
+												{
+													label: 'test2',
+													fill: false,
+													data: [
+														8, 34, 12, 24
+													],
+													backgroundColor: 'rgb(157, 109, 12)',
+													borderColor: 'rgb(157, 109, 12)'
+												} */
+											]
+										},
+										options: {
+											scales: {
+												yAxes: [
+													{
+														ticks: {
+															beginAtZero: true
+														}
+													}
+												]
+											}
+										}
+									});
+								</script>
+
+
+								<script type="text/javascript">
+									var context = document
+										.getElementById('myChart2')
+										.getContext('2d');
+									var myChart = new Chart(context, {
+										type: 'pie', // 차트의 형태
+										data: { // 차트에 들어갈 데이터
+											labels: [
+												//x 축
+												'환경','오염','탄소배출','현지현'
+											],
+											datasets: [
+												{ //데이터
+													label: 'test1', //차트 제목
+													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+													data: [
+														30,20,10,5 //x축 label에 대응되는 데이터 값
+													],
+													backgroundColor: [
+														//색상
+														'rgba(255, 99, 132, 0.2)',
+														'rgba(54, 162, 235, 0.2)',
+														'rgba(255, 206, 86, 0.2)',
+														'rgba(75, 192, 192, 0.2)',
+														'rgba(153, 102, 255, 0.2)',
+														'rgba(255, 159, 64, 0.2)',
+														'rgba(100, 159, 64, 0.2)'
+													],
+													borderColor: [
+														//경계선 색상
+														'rgba(255, 99, 132, 1)',
+														'rgba(54, 162, 235, 1)',
+														'rgba(255, 206, 86, 1)',
+														'rgba(75, 192, 192, 1)',
+														'rgba(153, 102, 255, 1)',
+														'rgba(255, 159, 64, 1)',
+														'rgba(100, 159, 64, 1)'
+													],
+													borderWidth: 1 //경계선 굵기
+												}/* ,
+												{
+													label: 'test2',
+													fill: false,
+													data: [
+														8, 34, 12, 24
+													],
+													backgroundColor: 'rgb(157, 109, 12)',
+													borderColor: 'rgb(157, 109, 12)'
+												} */
+											]
+										},
+										options: {
+											scales: {
+												yAxes: [
+													{
+														ticks: {
+															beginAtZero: true
+														}
+													}
+												]
+											}
+										}
+									});
+								</script>
+
+	</body>
+</html>

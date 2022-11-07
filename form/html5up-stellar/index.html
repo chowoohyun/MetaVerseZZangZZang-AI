@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>회의록</h1>
+						<p>회의시간 :, 회의날짜<br />
+						<a href="http://www.naver.com">회의록 다운로드</a></p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">회의록 요약</a></li>
+							<li><a href="#first">추천 정보</a></li>
+							<li><a href="#second">회의록 시각화</a></li>
+							<li><a href="#cta">전체 회의록</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+						<section id="intro" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2>회의록 요약</h2>
+									</header>
+									<p>회의록 요약 해주세요</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">회의록 전체</a></li>
+									</ul>
+								</div>
+								<span class="image"><img src="images/test.jpg" alt="" ></span>
+							</div>
+						</section>
+
+						<!-- First Section -->
+						<section id="first" class="main special">
+							<header class="major">
+								<h2>추천 정보</h2>
+							</header>
+							<ul class="features">
+								<li>
+									<span class="image"><img src="./images/kim.jpg" alt="" width="300px" height="300px"></span>
+									<h3>자료1(제목)</h3>
+									<a href="https://github.com/adunStudio" target="_blank" class="button">Learn More</a>
+								</li>
+								<li>
+									<img src = "./images/hyun.jpg" width="300px" height="300px">
+									<h3>자료2(제목)</h3>
+									<a href="https://github.com/JihyunGit" target="_blank" class="button">Learn More</a>
+								</li>
+								<li>
+									<img src = "./images/cho.jpg" width="300px" height="300px">
+									<h3>자료3(제목)</h3>
+									<a href="https://github.com/chowoohyun" target="_blank" class="button">Learn More</a>
+								</li>
+								<li>
+									<img src = "./images/park.jpg" width="300px" height="300px">
+									<h3>자료4(제목)</h3>
+									<a href="https://github.com/juliajh" target="_blank" class="button">Learn More</a>
+								</li>
+								<li>
+									<img src = "./images/lee.jpg" width="300px" height="300px">
+									<h3>자료5(제목)</h3>
+									<a href="https://github.com/leebach98" target="_blank" class="button">Learn More</a>
+								</li>
+								<li>
+									<img src = "./images/shin.jpg" width="300px" height="300px">
+									<h3>자료6(제목)</h3>
+									<a href="https://github.com/NoooJin" target="_blank" class="button">Learn More</a>
+								</li>
+							</ul>
+						</section>
+
+						<!-- Second Section -->
+						<section id="second" class="main special" style="height: 700px">
+							<header class="major">
+								<h2>회의 시각화</h2>
+							</header>
+							<div style="padding-top:8%;margin:auto; width: 470px; height: 400px;float: left">
+								<canvas id="myChart"></canvas>
+							</div>
+						<div style="margin:auto;width: 350px; height: 400px; float: right">
+							<canvas id="myChart2"></canvas>
+						</div>
+
+						</section>
+
+						<!-- Get Started -->
+						<section id="cta" class="main special">
+							<header class="major">
+								<h2>전체 회의록</h2>
+								<p>전체 회의록 들어가는 곳</p>
+							</header>
+							<footer class="major">
+								<ul class="actions special">
+									<li><a href="#" class="button primary" download="index.html" target="_self">다운로드</a></li>
+									<li><a href="generic.html" class="button">따로 보기</a></li>
+								</ul>
+							</footer>
+						</section>
+					</div>
+
+
+
+				<!-- Footer -->
+					<footer style="text-align: center; margin-top: 20px;" >
+						<section>
+
+							<p>Metaverse AI Team<a href="https://github.com/MetaVerseZZangZZang">( ZzangZzang )</a></p>
+
+						</section>
+
+
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	<script type="text/javascript">
+									var context = document
+											.getElementById('myChart')
+											.getContext('2d');
+									var myChart = new Chart(context, {
+										type: 'line',
+										data: {
+											labels: ['1','2','3','4','5','6','7'],
+											datasets: [
+												{ //데이터
+													label: 'test1', //차트 제목
+													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+													data: [
+														21,19,25,20,23,50,25 //x축 label에 대응되는 데이터 값
+													],
+													backgroundColor: [
+														//색상
+														'rgba(255, 99, 132, 0.2)',
+														'rgba(54, 162, 235, 0.2)',
+														'rgba(255, 206, 86, 0.2)',
+														'rgba(75, 192, 192, 0.2)',
+														'rgba(153, 102, 255, 0.2)',
+														'rgba(255, 159, 64, 0.2)'
+													],
+													borderColor: [
+														//경계선 색상
+														'rgba(255, 99, 132, 1)',
+														'rgba(54, 162, 235, 1)',
+														'rgba(255, 206, 86, 1)',
+														'rgba(75, 192, 192, 1)',
+														'rgba(153, 102, 255, 1)',
+														'rgba(255, 159, 64, 1)'
+													],
+													borderWidth: 1 //경계선 굵기
+												}/* ,
+												{
+													label: 'test2',
+													fill: false,
+													data: [
+														8, 34, 12, 24
+													],
+													backgroundColor: 'rgb(157, 109, 12)',
+													borderColor: 'rgb(157, 109, 12)'
+												} */
+											]
+										},
+										options: {
+											scales: {
+												yAxes: [
+													{
+														ticks: {
+															beginAtZero: true
+														}
+													}
+												]
+											}
+										}
+									});
+								</script>
+
+
+								<script type="text/javascript">
+									var context = document
+										.getElementById('myChart2')
+										.getContext('2d');
+									var myChart = new Chart(context, {
+										type: 'pie', // 차트의 형태
+										data: { // 차트에 들어갈 데이터
+											labels: [
+												//x 축
+												'환경','오염','탄소배출','현지현'
+											],
+											datasets: [
+												{ //데이터
+													label: 'test1', //차트 제목
+													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+													data: [
+														30,20,10,5 //x축 label에 대응되는 데이터 값
+													],
+													backgroundColor: [
+														//색상
+														'rgba(255, 99, 132, 0.2)',
+														'rgba(54, 162, 235, 0.2)',
+														'rgba(255, 206, 86, 0.2)',
+														'rgba(75, 192, 192, 0.2)',
+														'rgba(153, 102, 255, 0.2)',
+														'rgba(255, 159, 64, 0.2)',
+														'rgba(100, 159, 64, 0.2)'
+													],
+													borderColor: [
+														//경계선 색상
+														'rgba(255, 99, 132, 1)',
+														'rgba(54, 162, 235, 1)',
+														'rgba(255, 206, 86, 1)',
+														'rgba(75, 192, 192, 1)',
+														'rgba(153, 102, 255, 1)',
+														'rgba(255, 159, 64, 1)',
+														'rgba(100, 159, 64, 1)'
+													],
+													borderWidth: 1 //경계선 굵기
+												}/* ,
+												{
+													label: 'test2',
+													fill: false,
+													data: [
+														8, 34, 12, 24
+													],
+													backgroundColor: 'rgb(157, 109, 12)',
+													borderColor: 'rgb(157, 109, 12)'
+												} */
+											]
+										},
+										options: {
+											scales: {
+												yAxes: [
+													{
+														ticks: {
+															beginAtZero: true
+														}
+													}
+												]
+											}
+										}
+									});
+								</script>
+
+
+	</body>
+</html>
