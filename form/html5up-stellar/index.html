@@ -4,6 +4,29 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<script type="text/javascript">
+
+function checkSupportsImport() {
+
+	console.log( 'import' in document.createElement('link') );
+
+	return 'import' in document.createElement('link');
+
+}
+if ( checkSupportsImport() ){
+
+//지원되면 여기에 코딩
+
+//import한 내용을 id="contents" 에 넣는 작업 하면된다.
+
+}else{
+
+//안되면 오류 처리를 여기 코딩
+
+}
+
+</script>
+
 <html>
 	<head>
 		<title>Stellar by HTML5 UP</title>
@@ -12,6 +35,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+		<link rel="import" href="https://www.naver.com">
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$("#contents").load("elements.html");
+			});
+
+		</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -102,9 +133,12 @@
 							<div style="padding-top:8%;margin:auto; width: 470px; height: 400px;float: left">
 								<canvas id="myChart"></canvas>
 							</div>
-						<div style="margin:auto;width: 350px; height: 400px; float: right">
-							<canvas id="myChart2"></canvas>
-						</div>
+							<div style="margin:auto;width: 350px; height: 400px; float: right">
+								<canvas id="myChart2"></canvas>
+							</div>
+							<div style="margin:auto;width: 350px; height: 400px;">
+								<canvas id ="content"></canvas>
+							</div>
 
 						</section>
 
@@ -140,139 +174,110 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
-	<script type="text/javascript">
-									var context = document
-											.getElementById('myChart')
-											.getContext('2d');
-									var myChart = new Chart(context, {
-										type: 'line',
-										data: {
-											labels: ['1','2','3','4','5','6','7'],
-											datasets: [
-												{ //데이터
-													label: 'test1', //차트 제목
-													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
-													data: [
-														21,19,25,20,23,50,25 //x축 label에 대응되는 데이터 값
-													],
-													backgroundColor: [
-														//색상
-														'rgba(255, 99, 132, 0.2)',
-														'rgba(54, 162, 235, 0.2)',
-														'rgba(255, 206, 86, 0.2)',
-														'rgba(75, 192, 192, 0.2)',
-														'rgba(153, 102, 255, 0.2)',
-														'rgba(255, 159, 64, 0.2)'
-													],
-													borderColor: [
-														//경계선 색상
-														'rgba(255, 99, 132, 1)',
-														'rgba(54, 162, 235, 1)',
-														'rgba(255, 206, 86, 1)',
-														'rgba(75, 192, 192, 1)',
-														'rgba(153, 102, 255, 1)',
-														'rgba(255, 159, 64, 1)'
-													],
-													borderWidth: 1 //경계선 굵기
-												}/* ,
-												{
-													label: 'test2',
-													fill: false,
-													data: [
-														8, 34, 12, 24
-													],
-													backgroundColor: 'rgb(157, 109, 12)',
-													borderColor: 'rgb(157, 109, 12)'
-												} */
-											]
-										},
-										options: {
-											scales: {
-												yAxes: [
-													{
-														ticks: {
-															beginAtZero: true
-														}
-													}
-												]
-											}
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$("#contents").load("elements.html");
+			});
+
+		</script>
+
+
+			<script type="text/javascript">
+				var context = document
+						.getElementById('myChart')
+						.getContext('2d');
+				var myChart = new Chart(context, {
+					type: 'line',
+					data: {
+						labels: ['1','2','3','4','5','6','7'],
+						datasets: [
+								{ //데이터//
+									label: 'test1',
+									fill: false,
+									data: [21,19,25,20,23,50,25],
+									backgroundColor: [
+										'rgba(255, 99, 132, 0.2)',
+										'rgba(54, 162, 235, 0.2)',
+										'rgba(255, 206, 86, 0.2)',
+										'rgba(75, 192, 192, 0.2)',
+										'rgba(153, 102, 255, 0.2)',
+										'rgba(255, 159, 64, 0.2)'],
+									borderColor: [
+										'rgba(255, 99, 132, 1)',
+										'rgba(54, 162, 235, 1)',
+										'rgba(255, 206, 86, 1)',
+										'rgba(75, 192, 192, 1)',
+										'rgba(153, 102, 255, 1)',
+										'rgba(255, 159, 64, 1)'],
+									borderWidth: 1
+								}]},
+					options: {
+						scales: {
+							yAxes: [
+									{
+										ticks: {
+											beginAtZero: true
 										}
-									});
-								</script>
-
-
-								<script type="text/javascript">
-									var context = document
-										.getElementById('myChart2')
-										.getContext('2d');
-									var myChart = new Chart(context, {
-										type: 'pie', // 차트의 형태
-										data: { // 차트에 들어갈 데이터
-											labels: [
-												//x 축
-												'환경','오염','탄소배출','현지현'
-											],
-											datasets: [
-												{ //데이터
-													label: 'test1', //차트 제목
-													fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
-													data: [
-														30,20,10,5 //x축 label에 대응되는 데이터 값
-													],
-													backgroundColor: [
-														//색상
-														'rgba(255, 99, 132, 0.2)',
-														'rgba(54, 162, 235, 0.2)',
-														'rgba(255, 206, 86, 0.2)',
-														'rgba(75, 192, 192, 0.2)',
-														'rgba(153, 102, 255, 0.2)',
-														'rgba(255, 159, 64, 0.2)',
-														'rgba(100, 159, 64, 0.2)'
-													],
-													borderColor: [
-														//경계선 색상
-														'rgba(255, 99, 132, 1)',
-														'rgba(54, 162, 235, 1)',
-														'rgba(255, 206, 86, 1)',
-														'rgba(75, 192, 192, 1)',
-														'rgba(153, 102, 255, 1)',
-														'rgba(255, 159, 64, 1)',
-														'rgba(100, 159, 64, 1)'
-													],
-													borderWidth: 1 //경계선 굵기
-												}/* ,
-												{
-													label: 'test2',
-													fill: false,
-													data: [
-														8, 34, 12, 24
-													],
-													backgroundColor: 'rgb(157, 109, 12)',
-													borderColor: 'rgb(157, 109, 12)'
-												} */
-											]
-										},
-										options: {
-											scales: {
-												yAxes: [
-													{
-														ticks: {
-															beginAtZero: true
-														}
-													}
-												]
+									}
+									]
+						}
+					}
+				});
+			</script>
+			<script type="text/javascript">
+				var context = document
+						.getElementById('myChart2')
+						.getContext('2d');
+				var myChart = new Chart(
+						context, {
+							type: 'pie',
+							data: {
+								labels: ['환경','오염','탄소배출','현지현'],
+								datasets: [{
+									label: 'test1',
+									fill: false,
+									data: [30,20,10,5],
+									backgroundColor: [
+										'rgba(255, 99, 132, 0.2)',
+										'rgba(54, 162, 235, 0.2)',
+										'rgba(255, 206, 86, 0.2)',
+										'rgba(75, 192, 192, 0.2)',
+										'rgba(153, 102, 255, 0.2)',
+										'rgba(255, 159, 64, 0.2)',
+										'rgba(100, 159, 64, 0.2)'],
+									borderColor: [
+										'rgba(255, 99, 132, 1)',
+										'rgba(54, 162, 235, 1)',
+										'rgba(255, 206, 86, 1)',
+										'rgba(75, 192, 192, 1)',
+										'rgba(153, 102, 255, 1)',
+										'rgba(255, 159, 64, 1)',
+										'rgba(100, 159, 64, 1)'],
+									borderWidth: 1
+								}
+								]
+							},
+							options: {
+								scales: {
+									yAxes: [
+											{
+												ticks: {
+													beginAtZero: true
+												}
 											}
-										}
-									});
-								</script>
+											]
+								}
+							}
+						});
+			</script>
 
 
 	</body>
