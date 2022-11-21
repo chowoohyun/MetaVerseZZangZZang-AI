@@ -16,8 +16,6 @@
 - 약 1만건의 본문을 스크랩 후 정규화 & 토큰화 진행
 - 출현 빈도수에 비례하여 단어가 커지도록 설계
 
-Word Art (5).png
-
 ## NLP (Natural Language Processing)
 
 ## NLU (Natural Language Understanding)
