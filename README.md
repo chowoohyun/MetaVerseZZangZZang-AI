@@ -37,3 +37,6 @@
   - https://huggingface.co/lcw99/t5-base-korean-text-summary
 - clova api를 활용하여 축약된 정보를 제공하기도 함 ( 하지만 유로임.. )
   - https://www.ncloud.com/product/aiService/clovaSummary
+
+
+![KakaoTalk_20221129_172612503](https://user-images.githubusercontent.com/67001050/205871364-2640cd7d-c8bd-4928-b513-a0ed5b9e0310.png)
