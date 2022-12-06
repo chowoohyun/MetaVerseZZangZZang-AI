@@ -43,8 +43,6 @@
   - https://www.ncloud.com/product/aiService/clovaSummary
 
 
-![KakaoTalk_20221129_172612503](https://user-images.githubusercontent.com/67001050/205871364-2640cd7d-c8bd-4928-b513-a0ed5b9e0310.png)
-
 ![스크린샷_20221201_022349](https://user-images.githubusercontent.com/67001050/205871871-3372ed1c-bb0c-47a3-b22b-af2bd8b770b5.png)
 
 ![스크린샷_20221201_022618](https://user-images.githubusercontent.com/67001050/205871932-fc94b001-ddaa-4f3c-8abc-a43e2d152e9f.png)
