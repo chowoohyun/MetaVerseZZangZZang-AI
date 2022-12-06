@@ -16,6 +16,8 @@
 - 네이버 (블로그, 카페) 크롤링 진행
 - 약 1만건의 본문을 스크랩 후 정규화 & 토큰화 진행
 - 출현 빈도수에 비례하여 단어가 커지도록 설계
+![스크린샷_20221130_013322](https://user-images.githubusercontent.com/67001050/205871736-f7af87f8-5a21-4e7a-9496-727a77feff3c.png)
+
 
 ## NLP (Natural Language Processing)
 
@@ -40,3 +42,23 @@
 
 
 ![KakaoTalk_20221129_172612503](https://user-images.githubusercontent.com/67001050/205871364-2640cd7d-c8bd-4928-b513-a0ed5b9e0310.png)
+
+![스크린샷_20221201_022349](https://user-images.githubusercontent.com/67001050/205871871-3372ed1c-bb0c-47a3-b22b-af2bd8b770b5.png)
+
+![스크린샷_20221201_022618](https://user-images.githubusercontent.com/67001050/205871932-fc94b001-ddaa-4f3c-8abc-a43e2d152e9f.png)
+
+![스크린샷_20221201_023346](https://user-images.githubusercontent.com/67001050/205871972-b8d0c698-f8aa-4c0f-a7c2-543483e552b3.png)
+
+![스크린샷_20221201_023711](https://user-images.githubusercontent.com/67001050/205872052-c9fb5c57-327c-4406-8c0e-f5a6359356a5.png)
+
+![스크린샷_20221201_023954](https://user-images.githubusercontent.com/67001050/205872072-fe7973fc-ed4e-49a3-b744-f0a9d9a0d148.png)
+
+![스크린샷_20221201_024047](https://user-images.githubusercontent.com/67001050/205872079-4500d0e6-ac47-41e8-b3c1-848673bc1936.png)
+
+
+
+
+
+
+
+
